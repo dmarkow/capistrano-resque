@@ -1,3 +1,5 @@
+require 'resque/tasks'
+
 namespace :load do
   task :defaults do
     set :workers, {"*" => 1}
